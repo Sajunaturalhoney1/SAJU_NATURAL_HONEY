@@ -222,5 +222,6 @@ SAJU Natural Honey
     mail.send(reply)
 
     flash("Message sent successfully")
-    return redirect("/")    
-app.run(debug=True)
+    return redirect("/")   
+port = int(os.environ.get("PORT", 5000)) 
+app.run(host="0.0.0.0", port=port)
