@@ -1,0 +1,7 @@
+Technologies
+HTML5
+CSS3
+JavaScript
+AOS Animation
+GSAP
+Font Awesome

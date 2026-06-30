@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Add Product</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/add_product.css') }}">
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h2>Add New Product</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <label>Product Name</label>
+        <input type="text" name="name" required>
+
+        <label>500 g Price</label>
+        <input type="number" name="price500" required>
+
+        <label>1 KG Price</label>
+        <input type="number" name="price1kg" required>
+
+        <label>Description</label>
+        <textarea name="description"></textarea>
+
+        <label>Product Image</label>
+        <input type="file" name="image" required>
+
+        <button type="submit">
+            Add Product
+        </button>
+
+    </form>
+
+</div>
+
+<script>
+
+function loadImage(event){
+
+const image=document.getElementById("preview");
+
+image.src=URL.createObjectURL(event.target.files[0]);
+
+}
+
+</script>
+
+</body>
+
+</html>

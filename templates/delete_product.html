@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delete Product</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/delete_product.css') }}">
+
+</head>
+
+<body>
+
+    <div class="admin-header">
+
+        <div class="admin-logo">
+
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+
+            <h2>SAJU Natural Honey Admin</h2>
+
+        </div>
+
+        <a href="/admin/logout" class="logout-btn">
+            Logout
+        </a>
+
+    </div>
+
+    <div class="form-card">
+
+        <h2>Delete Product</h2>
+
+        <div class="warning">
+
+            <h3>⚠ Warning</h3>
+
+            <p>
+                Are you sure you want to delete this product?
+            </p>
+
+            <br>
+
+            <img
+                src="{{ url_for('static', filename='uploads/' + product.image) }}"
+                width="180">
+
+            <br><br>
+
+            <h3>{{ product.name }}</h3>
+
+            <p>{{ product.description }}</p>
+
+            <br>
+
+            <strong>
+                500 g : ₹{{ product.price500 }}
+            </strong>
+
+            <br><br>
+
+            <strong>
+                1 KG : ₹{{ product.price1kg }}
+            </strong>
+
+        </div>
+
+        <form method="POST">
+
+            <button
+                type="submit"
+                class="delete-confirm">
+
+                🗑 Delete Product
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <a href="/admin/dashboard"
+           class="add-btn">
+
+            ← Cancel
+
+        </a>
+
+    </div>
+
+</body>
+
+</html>

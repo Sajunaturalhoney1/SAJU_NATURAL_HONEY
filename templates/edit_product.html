@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Edit Product</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/edit_product.css') }}">
+
+</head>
+
+<body>
+
+<div class="form-card">
+
+<h2>Edit Product</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+<label>Product Name</label>
+<input type="text" name="name" value="{{ product.name }}" required>
+
+<label>Description</label>
+<textarea name="description" required>{{ product.description }}</textarea>
+
+<label>500 g Price</label>
+<input type="number" name="price500" value="{{ product.price500 }}" required>
+
+<label>1 KG Price</label>
+<input type="number" name="price1kg" value="{{ product.price1kg }}" required>
+
+<label>Change Image</label>
+<input type="file" name="image">
+
+<button type="submit">
+Update Product
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
