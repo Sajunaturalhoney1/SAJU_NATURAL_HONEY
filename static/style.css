@@ -1600,3 +1600,54 @@ align-items:center;
     font-weight:600;
 }
 }
+
+@media(max-width:768px){
+
+    .hero{
+    padding-top:120px;
+}
+
+.logo h2{
+    font-size:18px;
+}
+
+.header-btn{
+    display:none;
+}
+
+    nav.show{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:90px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    gap:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    z-index:1000;
+} 
+
+    nav{
+        display:none;
+    }
+
+    nav.show{
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        top:90px;
+        left:0;
+        width:100%;
+        background:white;
+        padding:20px;
+        gap:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.1);
+        z-index:1000;
+    }
+
+    .menu{
+        display:block;
+    }
+}

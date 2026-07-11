@@ -47,11 +47,11 @@ window.addEventListener("scroll", () => {
 const menu = document.querySelector(".menu");
 const nav = document.querySelector("nav");
 
-menu.addEventListener("click",()=>{
-
-    nav.classList.toggle("show");
-
-});
+if(menu && nav){
+    menu.addEventListener("click", () => {
+        nav.classList.toggle("show");
+    });
+}
 
 
 /* ==========================================
