@@ -38,7 +38,8 @@ beekeeping honey Tamil Nadu
 <!-- OPEN GRAPH (SOCIAL SHARING) -->
 <meta property="og:title" content="Saju Natural Honey - 100% Pure Natural Honey Near You">
 <meta property="og:description" content="Buy pure natural honey directly from beekeepers. Available near Udangudi & Tamil Nadu.">
-<meta property="og:image" content="{{ url_for('static', filename='images/logo.png') }}">
+<meta property="og:image"
+content="https://sajunaturalhoney.com/static/images/logo.png">
 <meta property="og:type" content="website">
 
 <link rel="icon"
@@ -66,7 +67,8 @@ PRELOADER
 
 <div class="loader">
 
-<img src="{{ url_for('static', filename='images/logo.png') }}">
+<img src="{{ url_for('static', filename='images/logo.png') }}"
+alt="Saju Natural Honey Logo">
 
 <h2>Loading Pure Honey...</h2>
 
@@ -88,7 +90,8 @@ HEADER
 
 <div class="logo">
 
-<img src="{{ url_for('static', filename='images/logo.png') }}">
+<img src="{{ url_for('static', filename='images/logo.png') }}"
+alt="Saju Natural Honey Logo">
 
 <h2>Saju Natural Honey</h2>
 
@@ -219,21 +222,25 @@ Learn More
 
 <img
 class="bowl"
-src="{{ url_for('static', filename='images/bowl.png') }}">
+src="{{ url_for('static', filename='images/bowl.png') }}"
+alt="Natural Honey Bowl">
 
 <!-- Bees -->
 
 <img
 class="bee bee1"
-src="{{ url_for('static', filename='images/bee.png') }}">
+src="{{ url_for('static', filename='images/bee.png') }}"
+alt="Honey Bee">
 
 <img
 class="bee bee2"
-src="{{ url_for('static', filename='images/bee.png') }}">
+src="{{ url_for('static', filename='images/bee.png') }}"
+alt="Honey Bee">
 
 <img
 class="bee bee3"
-src="{{ url_for('static', filename='images/bee.png') }}">
+src="{{ url_for('static', filename='images/bee.png') }}"
+alt="Honey Bee">
 
 </div>
 
@@ -282,7 +289,8 @@ natural taste, aroma, and nutrients preserved.
 
 <div class="about-image">
 
-<img src="{{ url_for('static', filename='images/about.jpg') }}" alt="About Saju Natural Honey">
+<img src="{{ url_for('static', filename='images/about.jpg') }}" alt="About Saju Natural Honey"
+loading="lazy">
 
 <div class="experience-card">
 
@@ -606,7 +614,9 @@ Fresh honey delivered safely within
             <div class="product-image">
                 <span class="badge">Best Seller</span>
 
-                <img src="{{ url_for('static', filename='images/honey1.png') }}">
+                <img src="{{ url_for('static', filename='images/honey1.png') }}"
+                alt="Kombu Honey"
+                loading="lazy">
             </div>
 
             <div class="product-content">
@@ -652,7 +662,9 @@ Fresh honey delivered safely within
 
             <div class="product-image">
 
-                <img src="{{ url_for('static', filename='images/honey2.png') }}">
+                <img src="{{ url_for('static', filename='images/honey2.png') }}"
+                alt="Murungai Honey"
+                loading="lazy">
 
             </div>
 
@@ -698,7 +710,9 @@ Fresh honey delivered safely within
 
             <div class="product-image">
 
-                <img src="{{ url_for('static', filename='images/honey3.png') }}">
+                <img src="{{ url_for('static', filename='images/honey3.png') }}"
+                alt="Then Adai"
+                loading="lazy">
 
             </div>
 
@@ -744,7 +758,9 @@ Fresh honey delivered safely within
 
             <div class="product-image">
 
-                <img src="{{ url_for('static', filename='images/honey4.png') }}">
+                <img src="{{ url_for('static', filename='images/honey4.png') }}"
+                alt="Honey-Soaked Figs"
+                loading="lazy">
 
             </div>
 
@@ -790,7 +806,9 @@ Fresh honey delivered safely within
 
             <div class="product-image">
 
-                <img src="{{ url_for('static', filename='images/honey5.png') }}">
+                <img src="{{ url_for('static', filename='images/honey5.png') }}"
+                alt="Honey-Soaked Almonds"
+                loading="lazy">
 
             </div>
 
@@ -1088,6 +1106,7 @@ target="_blank">
   "name": "Saju Natural Honey",
   "image": "{{ url_for('static', filename='images/logo.png') }}",
   "telephone": "+91 7550266217",
+  "url": "https://sajunaturalhoney.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality":"Udangudi",
