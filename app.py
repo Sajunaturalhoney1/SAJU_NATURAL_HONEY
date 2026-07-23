@@ -42,6 +42,14 @@ def home():
     products = load_products()
     return render_template("index.html", products=products)
 
+from flask import send_from_directory
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory('.', 'robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('.', 'sitemap.xml')
 @app.route("/admin")
 def admin_shortcut():
     return redirect("/admin/login")
